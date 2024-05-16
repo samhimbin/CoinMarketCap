@@ -7,7 +7,7 @@ import json
 local_currency = 'USD'
 local_symbol = '$'
 
-api_key = 'ENTER_YOUR_API_KEY_HERE'
+api_key = '9542ce7e-4823-495b-9c72-d664e7c2fd45'
 headers = {'X-CMC_PRO_API_KEY': api_key}
 
 base_url = 'https://pro-api.coinmarketcap.com'
@@ -17,7 +17,7 @@ global_url = base_url + '/v1/global-metrics/quotes/latest?convert=' + local_curr
 request = requests.get(global_url, headers=headers)
 results = request.json()
 
-# print(json.dumps(results, sort_keys=True, indent=4))
+#print(json.dumps(results, sort_keys=True, indent=4))
 
 data = results["data"]
 
